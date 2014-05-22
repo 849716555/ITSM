@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+    <RelativeLayout
+        android:id="@+id/topLocationLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/top_bg01" >
+
+        <Button
+            android:id="@+id/btnLoctationToTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/btn_title_fh" />
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="确定"
+            android:layout_marginLeft="80dip" />
+ 
+    </RelativeLayout>
+     
+    <LinearLayout
+        android:id="@+id/liner_1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:layout_below="@id/topLocationLayout"
+        android:orientation="vertical" >
+
+        <ProgressBar
+            android:id="@+id/location_tree_progresbar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center" 
+            android:visibility="visible" />
+        <ListView
+            android:id="@+id/treeview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" /> 
+    </LinearLayout> 
+
+</RelativeLayout>

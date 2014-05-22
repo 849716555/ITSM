@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/top_bg01" >
+
+        <TextView
+            android:id="@+id/tbTitleBlackList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="故障查询"
+            android:textColor="@color/white"
+            android:textSize="20dip" />
+
+        <Button
+            android:id="@+id/btnBackToH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/btn_title_fh" />
+    </RelativeLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/main_radio"
+        android:layout_below="@id/topLayout" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="fill_parent"
+            android:layout_height="108dip"
+            android:background="@color/lightgray"
+            android:paddingBottom="5dip"
+            android:paddingTop="20dip" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="关键字："
+                android:textColor="@color/blue"
+                android:textSize="16dip" />
+
+            <EditText
+                android:id="@+id/txtQueryKey"
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_weight="1"
+                android:hint="关键字"
+                android:textSize="16dip" >
+            </EditText>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="fill_parent"
+            android:layout_height="108dip"
+            android:background="@color/white"
+            android:paddingBottom="5dip"
+            android:paddingTop="20dip" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="报修开始日期："
+                android:textSize="16dip" />
+
+            <EditText
+                android:id="@+id/textRecovery_Begin_Date"
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_weight="1"
+                android:hint="请选择日期"
+                android:textSize="16dip" >
+            </EditText>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="fill_parent"
+            android:layout_height="108dip"
+            android:background="@color/lightgray"
+            android:paddingBottom="5dip"
+            android:paddingTop="20dip" >
+
+            <TextView
+                android:id="@+id/TextView02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="报修结束日期："
+                android:textSize="16dip" />
+
+            <EditText
+                android:id="@+id/textRecovery_End_Date"
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_weight="1"
+                android:hint="请选择日期"
+                android:textSize="16dip" >
+            </EditText>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="fill_parent"
+            android:layout_height="108dip"
+            android:background="@color/white"
+            android:paddingBottom="5dip"
+            android:paddingTop="20dip" >
+
+            <TextView
+                android:id="@+id/TextView03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="故障地点："
+                android:textSize="16dip" />
+
+            <EditText
+                android:id="@+id/textRecovery_Place"
+                android:layout_width="wrap_content"
+                android:layout_height="50dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_weight="1"
+                android:hint="选择位置"
+                android:textSize="16dip" >
+            </EditText>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="fill_parent"
+            android:layout_height="108dip"
+            android:background="@color/lightgray"
+            android:paddingBottom="5dip"
+            android:paddingTop="20dip" >
+
+            <TextView
+                android:id="@+id/TextView04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="报修状态："
+                android:textSize="16dip" />
+
+            <EditText
+                android:id="@+id/txtBuStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:editable="false"
+                android:layout_weight="1"
+                android:hint="选择状态"
+                android:textSize="16dip" >
+            </EditText>
+        </TableRow>
+        
+        <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/btnQuery"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dip"
+                        android:layout_marginRight="5dip"
+                        android:text="确定" /> 
+                </LinearLayout>
+            </TableRow>
+        
+    </TableLayout>
+
+</LinearLayout>
